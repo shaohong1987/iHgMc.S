@@ -1,5 +1,5 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using iHgMc.S.Web.Filters;
 
 namespace iHgMc.S.Web
 {
@@ -7,7 +7,7 @@ namespace iHgMc.S.Web
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            filters.Add(new SystemErrorAttribute());
         }
     }
 }

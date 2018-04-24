@@ -10,6 +10,9 @@ namespace iHgMc.S.Web.Controllers
     {
         public ActionResult Index()
         {
+            int result = 0;
+            int x=1,y =0;
+            result = x / y;
             return View();
         }
 
